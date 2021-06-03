@@ -181,6 +181,7 @@ header ul .reset {
   border-radius: 30px;
   min-width: 200px;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 
 .loser {
@@ -227,5 +228,41 @@ header ul .reset {
 .clicked-button {
   background-color: #DF2B13 !important;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header h2 {
+    display: none;
+  }
+  .main-content .hidden-number {
+    margin: 10px;
+    padding: 0px;
+  }
+  .main-content .buttons {
+    padding: 10px;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+  .main-content .buttons .button {
+    height: 50px;
+    width: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-content .informations .right-info .message {
+    font-size: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
