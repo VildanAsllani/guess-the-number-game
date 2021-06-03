@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h2>Guess the Number</h2>
+        <ul>
+            <li>How to play</li>
+            <li>Rankings</li>
+            <li class="reset">Reset Game</li>
+        </ul>
+    </header>
+    <section class="main-content">
+        <h1 class="hidden-number">?</h1>
+        <div class="buttons">
+            <button class="button" value="1">1</button>
+            <button class="button" value="2">2</button>
+            <button class="button" value="3">3</button>
+            <button class="button" value="4">4</button>
+            <button class="button" value="5">5</button>
+            <button class="button" value="6">6</button>
+            <button class="button" value="7">7</button>
+            <button class="button" value="8">8</button>
+            <button class="button" value="9">9</button>
+            <button class="button" value="10">10</button>
+            <button class="button" value="11">11</button>
+            <button class="button" value="12">12</button>
+            <button class="button" value="13">13</button>
+            <button class="button" value="14">14</button>
+            <button class="button" value="15">15</button>
+            <button class="button" value="16">16</button>
+            <button class="button" value="17">17</button>
+            <button class="button" value="18">18</button>
+            <button class="button" value="19">19</button>
+            <button class="button" value="20">20</button>
+        </div>
+        <div class="informations">
+            <div class="left-info">
+                <h1 class="number-of-guesses">0</h1>
+                <p class="guess-array">Guesses: </p>
+            </div>
+            <div class="right-info">
+                <h1 class="message">Start guessing</h1>
+            </div>
+        </div>
+    </section>
+    <section class="winner" id="winner">
+        <h1 class="winner-h1">WINNER</h1>
+        <h1 class="winner-number"></h1>
+        <button class="play-again">Play again</button>
+    </section>
+    <section class="loser" id="loser">
+        <h1 class="loser-h1">LOOSER</h1>
+        <h1 class="winner-number-loser"></h1>
+        <button class="play-again">Try again</button>
+    </section>
+    <script src="/js/script.js"></script>
+</body>
+</html>

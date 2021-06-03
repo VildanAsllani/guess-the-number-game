@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+// $fontFamily: 'Roboto', sans-serif;
+$fontFamily: 'PT Sans Narrow', sans-serif;
+$fontColor:#3B3B3B;
+$maxWidth:1000px;
+$marginCenter:0 auto;
+$accentColor:#0066FF;
+
+body{
+    font-family: $fontFamily;
+    margin:0px;
+    padding:0px;
+    color: $fontColor;
+    background-color: #F6F6F6;
+}
+*{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    padding:0px;
+    margin:0px;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    max-width: $maxWidth;
+    margin:$marginCenter;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul{
+        list-style: none;
+        padding:0px;
+        margin:0px;
+        li{
+            float: left;
+            font-size: 16px;
+            // font-weight: 600;
+            padding:10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: opacity .3s;
+            &:hover{
+                // background-color: red;
+                opacity: .8;
+            }
+        }
+        .reset{
+            background-color: $accentColor;
+            border-radius: 20px;
+            color: white;
+        }
+    }
+}
+
+.main-content{
+    display: grid;
+    max-width: $maxWidth;
+    width: 100%;
+    margin:$marginCenter;
+    .hidden-number{
+        // background-color: red;
+        text-align: center;
+        padding: 10px;
+        font-size: 70px;
+        margin:30px;
+    }
+    .buttons{
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap:20px;
+        .button{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            // font-weight: bold;
+            font-size: 20px;
+            // box-shadow:
+            //     0 0px 0.8px rgba(0, 0, 0, 0.02),
+            //     0 0px 1.9px rgba(0, 0, 0, 0.028),
+            //     0 0px 3.6px rgba(0, 0, 0, 0.035),
+            //     0 0px 6.5px rgba(0, 0, 0, 0.042),
+            //     0 0px 12.1px rgba(0, 0, 0, 0.05),
+            //     0 0px 29px rgba(0, 0, 0, 0.07)
+            //     ;
+            box-shadow: 0px 2px 3px rgb(226, 226, 226);
+        }
+        margin-bottom: 30px;
+    }
+    .informations{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .left-info{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            .number-of-guesses{
+                font-size: 40px;
+                text-align: center;
+            }
+            p{
+                background-color: #CADEFE;
+                text-align: center;
+                padding: 5px 15px;
+                font-weight: bold;
+                color: $accentColor;
+                border-radius: 5px;
+            }
+        }
+        .right-info{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            .message{
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+
+.winner{
+    // display: none !important;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: lightgreen;
+    top: 0;
+    // float: left;
+    margin-left: -100%;
+    // transition: margin-left .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .winner-h1{
+        // color:red;
+        font-size: 50px;
+    }
+    .winner-number{
+        padding: 20px;
+        font-size: 80px;
+    }
+    .play-again{
+        border: none;
+        background-color: white;
+        padding: 15px 20px;
+        border-radius: 30px;
+        min-width: 200px;
+        cursor: pointer;
+    }
+}
+.loser{
+    // display:none !important;
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color:#DF2B13;
+    top: 0;
+        // float: left;
+        margin-left: -100%;
+        // transition: margin-left .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .loser-h1{
+        font-size: 50px;
+    }
+    .winner-number-loser{
+        padding: 20px;
+        font-size: 80px;
+    }
+    .play-again{
+        border: none;
+        background-color: white;
+        padding: 15px 20px;
+        border-radius: 30px;
+        min-width: 200px;
+        cursor: pointer;
+    }
+}
+
+.clicked-button{
+    // color: red;
+    background-color: #DF2B13 !important;
+    color: white;
+}
