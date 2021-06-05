@@ -14,6 +14,9 @@ body{
     color: $fontColor;
     background-color: #F6F6F6;
 }
+html{
+    scroll-behavior: smooth;
+}
 *{
     box-sizing: border-box;
     text-decoration: none;
