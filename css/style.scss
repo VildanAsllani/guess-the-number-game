@@ -16,6 +16,13 @@ body{
 }
 *{
     box-sizing: border-box;
+    text-decoration: none;
+}
+a{
+    color: $fontColor;
+}
+p{
+    margin: 0px;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -31,7 +38,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    .active{
+        text-decoration: underline;
+    }
     ul{
         list-style: none;
         padding:0px;
@@ -166,6 +175,7 @@ header{
     height: 100%;
     background-color:#DF2B13;
     top: 0;
+    bottom: 0;
         // float: left;
         margin-left: -100%;
         // transition: margin-left .5s;
@@ -187,12 +197,57 @@ header{
         border-radius: 30px;
         min-width: 200px;
         cursor: pointer;
+        font-size: 1.2rem;
     }
 }
 
 .clicked-button{
     background-color: #DF2B13 !important;
     color: white;
+}
+.grid{
+    display: grid;
+    justify-content: center;
+}
+main{
+    width: 100%;
+    max-width: $maxWidth;
+    margin: $marginCenter;
+    padding: 50px;
+    // background-color: $accentColor;
+    h1{
+        margin-bottom: 20px;
+    }
+    p{
+        line-height: 1.5;
+        font-size: 18px;
+    }
+    ol{
+        line-height: 1.5;
+        h3{
+            margin-bottom: 5px;
+        }
+        li{
+            font-size: 18px;
+        }
+    }
+    div{
+        margin-bottom: 30px;
+        strong{
+            font-size: 18px;
+        }
+        img{
+            max-width: 100%;
+
+        }
+    }
+    h2{
+        text-align: center;
+        // display: block;
+    }
+    img{
+        max-width: 100%;
+    }
 }
 
 

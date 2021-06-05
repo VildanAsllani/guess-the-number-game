@@ -39,10 +39,8 @@ for(let i=0; i<buttons.length; i++){
             }
         }
         else{
-            console.log('DONE');
             loser();
         } 
-        // buttons[i].disabled=true;
         this.disabled = true;
         this.classList.add('clicked-button');
     });
